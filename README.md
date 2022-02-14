@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ikth-counter-v5-webpack-rRouter-redux-sass-2022
 
-## Getting Started
+## Status
 
-First, run the development server:
+- 20220206: _completed most of what I wanted to achieve, & am pleased in general_
+- 20220207: _Included route /form to use Netlify form submmision as contact form. All is working fine on live site & added a notification settings to send form submission to my yahoo email_
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Mission
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Wanted to test out: webpack / react / react-router / redux / sass / redux devtools / webpack image optimization plugins / Netlify form submission (contact form)
+- Three route paths:
+  - `/` = counter page with three working redux buttons
+  - `/side` = display compress imaged
+  - `/form` = contact form
+  - `/*` = error page
+- working counter with redux
+- use of SASS within my webpack template
+- optimized image (jpeg),
+- deploy on Netlify using their configuration file
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Main technology / libraries / plugins used
 
-## Learn More
+- webpack (my template)
+- javascript
+- react
+- react-router
+- redux
+  - @redux-devTools/extension
+  - redux-thunk
+- SASS
+- image-minimizer-webpack-plugin / Imagemin / imagemin-mozjpeg
+  - my jpeg file from 232kb to 11kb with 5% quality on production mode
+- `netlify.toml` - Netlify configuration file to redirect static routes (react-router) & basic setup
+- Netlify form submission as contact form for live site
 
-To learn more about Next.js, take a look at the following resources:
+  ***
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ## [ikth-counter-v5-webpack-rRouter-redux-sass-2022](https://github.com/RechadSalma/ikth-counter-v5-webpack-rRouter-redux-sass-2022)
