@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "ikupdate": "npm i && npm update && npm audit fix --force && npm outdated",
-    "ikclean": "rm -fr node_modules/ package-lock.json && npm cache clean -vf && npm run ikupdate && npm run dev",
+    "ikclean": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm run ikupdate && npm run dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
