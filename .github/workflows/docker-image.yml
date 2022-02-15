@@ -20,4 +20,4 @@ jobs:
           email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
           api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
           docker_compose_file: "./docker-compose.yml" # set the path to the folder where the docker-compose file is located
-          heroku_apps: '["appname":"v8tests","apptype":"web"}]' # List of Docker Image name, Heroku app and Heroku app type
+          heroku_apps: '[{"imagename":"ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022_v8tests","appname":"v8tests","apptype":"web"}]' # List of Docker Image name, Heroku app and Heroku app type
