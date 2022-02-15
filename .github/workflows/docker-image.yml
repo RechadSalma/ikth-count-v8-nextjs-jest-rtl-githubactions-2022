@@ -13,6 +13,9 @@ jobs:
       - name: iK collecting our git repo using checkout
         uses: actions/checkout@v2
 
+      - name: iK test app with Jest & React-Testing-Library
+        run: npm run test
+
       - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
         id: heroku
         uses: snithyanantham/docker-compose-multiple-apps-heroku-deploy@v1.0 # use the latest version of the action
