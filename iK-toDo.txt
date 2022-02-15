@@ -1,8 +1,9 @@
 ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 -version08: nextjs / docker-compose /react / redux / jest & react-testing-library / sass with bootstrap / deploy on Heroku
 ================ LEFT OFF
--working jest & react-testing-library (TDD as best a possible)
-	-test jest & react-testing-library is working fine
+-implement redux to the nextjs app
+	-setup redux first with store & reducers
+		-iK using repo example in your bookmark
 
 ================ DONE
 -check for any outdated modules & update if any
@@ -27,13 +28,13 @@ ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 	-test jest & react-testing-library is working fine
 	-implement test for current pages
 
-================ TODO
 -add testing in your Github Actions
 
 -use of SASS with Bootstrap
 	-set up custom file for bootstrap with sass
 	-create global.scss
 
+================ TODO
 -implement redux to the nextjs app
 	-setup redux first with store & reducers
 	-implement @redux-devtools/extension
