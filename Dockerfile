@@ -13,6 +13,9 @@ RUN npm run ikupdate
 # copy all files over
 COPY . .
 
+# test file with jest & React-Testing-Library
+RUN npm run testout
+
 # build
 RUN npm run build
 
