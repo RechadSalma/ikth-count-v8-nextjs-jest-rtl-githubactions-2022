@@ -2,22 +2,22 @@ name: iK my first github action pipeline to build & push my docker-compse app to
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: iK collecting our git repo using checkout
-      uses: actions/checkout@v2
+      - name: iK collecting our git repo using checkout
+        uses: actions/checkout@v2
 
-    - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
-      id: heroku
-      uses: snithyanantham/docker-compose-multiple-apps-heroku-deploy@v1.0  # use the latest version of the action
-      with:
-        email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
-        api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
-        docker_compose_file: './docker-compose.yml' # set the path to the folder where the docker-compose file is located
-        heroku_apps: '[{"imagename":"v8tests","appname":"v8tests","apptype":"web"}]' # List of Docker Image name, Heroku app and Heroku app type
+      - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
+        id: heroku
+        uses: snithyanantham/docker-compose-multiple-apps-heroku-deploy@v1.0 # use the latest version of the action
+        with:
+          email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
+          api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
+          docker_compose_file: "./docker-compose.yml" # set the path to the folder where the docker-compose file is located
+          heroku_apps: '["appname":"v8tests","apptype":"web"}]' # List of Docker Image name, Heroku app and Heroku app type
