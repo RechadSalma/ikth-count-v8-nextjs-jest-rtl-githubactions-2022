@@ -14,7 +14,7 @@ RUN npm run ikupdate
 COPY . .
 
 # test file with jest & React-Testing-Library
-# RUN npm run testout
+RUN npm run testout
 
 # build
 RUN npm run build

@@ -13,8 +13,8 @@ jobs:
       - name: iK collecting our git repo using checkout
         uses: actions/checkout@v2
 
-      - name: iK test app with Jest & React-Testing-Library
-        run: npm run testout
+      # - name: iK test app with Jest & React-Testing-Library
+      #   run: npm run testout
 
       - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
         id: heroku
