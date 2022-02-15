@@ -7,6 +7,6 @@ describe("iK / home page tests", () => {
     render(<Home />);
     const heading = screen.getByRole("heading");
     screen.debug(heading);
-    expect(heading.textContent).toMatch(/iK I am home page\. $/);
+    expect(heading.textContent).toMatch(/iK I am home page\./);
   });
 });
