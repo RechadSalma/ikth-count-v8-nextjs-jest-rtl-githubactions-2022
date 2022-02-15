@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  nextapp:
+  v8tests:
     build:
       context: .
       dockerfile: Dockerfile
