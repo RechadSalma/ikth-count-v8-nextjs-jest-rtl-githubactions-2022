@@ -12,7 +12,7 @@ describe("Side page tests", () => {
   test("<h1> with the correct text", () => {
     const { getByRole, debug } = render(<Side />);
     const heading = getByRole("heading", { level: 1 });
-    debug(heading);
+    // debug(heading);
     expect(heading.textContent).toMatch(/^Welcome/);
   });
 });

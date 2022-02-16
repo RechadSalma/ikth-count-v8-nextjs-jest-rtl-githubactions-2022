@@ -1,9 +1,9 @@
 ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 -version08: nextjs / docker-compose /react / redux / jest & react-testing-library / sass with bootstrap / deploy on Heroku
 ================ LEFT OFF
--implement redux to the nextjs app
-	-setup redux first with store & reducers
-		-iK using repo example in your bookmark
+-create action creator (redux)		NOW STARTING, JUST FINISHED DOING TEST FOR REACT COMPONENTS
+	-test
+	-connect the action creators to the buttons
 
 ================ DONE
 -check for any outdated modules & update if any
@@ -34,17 +34,17 @@ ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 	-set up custom file for bootstrap with sass
 	-create global.scss
 
-================ TODO
 -implement redux to the nextjs app
 	-setup redux first with store & reducers
 	-implement @redux-devtools/extension
 	-implement redux-thunk
-	-use counter state for CounterDisplay component
+	-use dummy counter state for CounterDisplay component
 
 -create counter component scaffold with display number & its three buttons (increment/decrement/reset)
 	-do not worry about the logic as we will do that with redux action creators
 	-do testing along with it (TDD if possible)
 
+================ TODO
 -create action creator (redux)
 	-test
 	-connect the action creators to the buttons
@@ -56,6 +56,7 @@ ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 -README.md file
 
 ================ COME BACK
+-do not forget to ensure those skipped test are switch back on & passing
 
 ================ WRITE IN YOUR NOTE DOC
 
