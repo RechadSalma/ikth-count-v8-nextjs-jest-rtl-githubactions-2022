@@ -8,10 +8,12 @@ import reducers from "./reducers";
 let store;
 
 function initStore(initialState) {
+  const composeEnhancers = composeWithDevTools({ trace: true });
+
   return createStore(
     reducers,
     initialState,
-    composeWithDevTools(applyMiddleware(thunkMiddleware))
+    composeEnhancers(applyMiddleware(thunkMiddleware))
   );
 }
 

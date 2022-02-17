@@ -1,9 +1,8 @@
 ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 -version08: nextjs / docker-compose /react / redux / jest & react-testing-library / sass with bootstrap / deploy on Heroku
 ================ LEFT OFF
--create action creator (redux)		NOW STARTING, JUST FINISHED DOING TEST FOR REACT COMPONENTS
-	-test
-	-connect the action creators to the buttons
+-README.md file
+	-CR = FIRST DO LIGHTHOUSE TEST & any leftovers you can think off
 
 ================ DONE
 -check for any outdated modules & update if any
@@ -44,21 +43,35 @@ ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 	-do not worry about the logic as we will do that with redux action creators
 	-do testing along with it (TDD if possible)
 
-================ TODO
--create action creator (redux)
-	-test
-	-connect the action creators to the buttons
+-create counter reducer (bdd style at first)
+
+-create action creator (redux) 
+	-insert Root component to ensure component is working correctly
+	-test (BDD)
+
+-implement trace for redux devtool extension
+
+-implement the state/action creators to the counter component & buttons
 
 -check up on snyk recommendations
 
--git commit & see Heroku deploy
-
+================ TODO
 -README.md file
+
+-git commit & see Heroku deploy
 
 ================ COME BACK
 -do not forget to ensure those skipped test are switch back on & passing
 
 ================ WRITE IN YOUR NOTE DOC
+-FAILED. Cannot do nextjs react/jest/react-testing-library/redux testing. I tried to create a root provider in all ways but it depends on _app.js pageProps object, & I cannot seem to mock it in test files. You will get error saying they cannot recognise redux & that I should wrap component with <Provider/>. I spend a long time on this trying all sorts of ways. So if I want to do redux testing than I should use my webpack template because redux is already complicated to setup with nextjs & cannot be tested
+
+-when testing react useState, you cannot easily set it unless you use argments. Therefore you will have to either use arguments or accept the useState values & work with it as best you can
+
+================ NOTE TO SELF
+-I changed from TDD test to BDD test because I am having a hard time, plus I think at first I should just get used to testing & then at some point when I get better I will switch to TDD testing
+
+-I had to remove redux because I could not do redux testing since it requires _app.js pageProps, but I cannot see to access it at all, mocking it does not seem to work at all
 
 ================ MISSION
 -version08: nextjs / docker-compose /react / redux / jest & react-testing-library / sass with bootstrap / deploy on Heroku
