@@ -14,11 +14,11 @@ RUN npm ci
 # copy all files over
 COPY . .
 
-# test file with jest & React-Testing-Library
+# test file with jest & React-Testing-Library. But ensure test command is standout when finish, meaning not in --watch mode
 RUN echo 'IK TESTING' && npm run testout
 
 # build
 RUN npm run build
 
-# CMD to start server
+# CMD to start server. eg. node ./src/server.js
 CMD npm run start
