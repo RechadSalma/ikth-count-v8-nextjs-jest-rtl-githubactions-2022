@@ -4,6 +4,7 @@
   "scripts": {
     "ikupdate": "npm i && npm update && npm audit fix --force && npm outdated",
     "ikclean": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm run ikupdate && npm run dev",
+    "ikcleanci": "rm -fr node_modules/ .next/ && npm cache clean -vf && npm ci && npm run dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

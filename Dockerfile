@@ -4,10 +4,10 @@ FROM node:16.14-alpine3.15
 # set directory to work within
 WORKDIR /iKnextApp
 
-# copy package.json file
-COPY ./package.json .
+# copying both package.json & package-lock-json file
+COPY ./package*.json .
 
-# npm install
+# npm install, must have package-lock-json file to install successfully
 RUN npm ci
 
 # copy all files over
