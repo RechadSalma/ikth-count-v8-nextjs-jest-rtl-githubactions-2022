@@ -8,7 +8,7 @@ WORKDIR /iKnextApp
 COPY ./package.json .
 
 # npm install
-RUN npm run ikupdate
+RUN npm ci
 
 # copy all files over
 COPY . .

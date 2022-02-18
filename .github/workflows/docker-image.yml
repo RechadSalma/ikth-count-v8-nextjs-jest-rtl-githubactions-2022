@@ -3,8 +3,8 @@ name: iK my first github action pipeline to build & push my docker-compse app to
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
+  # pull_request:
+  #   branches: [master]
 
 jobs:
   build:
