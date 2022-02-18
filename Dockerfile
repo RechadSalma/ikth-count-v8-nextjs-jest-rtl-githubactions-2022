@@ -5,7 +5,8 @@ FROM node:16.14-alpine3.15
 WORKDIR /iKnextApp
 
 # copying both package.json & package-lock-json file
-COPY ./package*.json .
+COPY ./package.json .
+COPY ./package-lock.json .
 
 # npm install, must have package-lock-json file to install successfully
 RUN npm ci
