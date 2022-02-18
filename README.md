@@ -1,42 +1,42 @@
-# ikth-counter-v5-webpack-rRouter-redux-sass-2022
+# ikth-count-v8-nextjs-jest-rtl-githubactions-2022
 
 ## Status
 
-- 20220206: _completed most of what I wanted to achieve, & am pleased in general_
-- 20220207: _Included route /form to use Netlify form submmision as contact form. All is working fine on live site & added a notification settings to send form submission to my yahoo email_
+- 20220218: _succeeded i most test I wanted to do, but unfornately failed testing redux on nextjs_
+  - _Because redux is already complicated to install on nextjs, when testing I needed redux Provider wrap, however it also required `pageProps` which can only be used on the `_app.js` file that is an nextjs props needed_
+    - _I tried everything I could think of but there is not workaround I can find unless you decide to install redux in a different way which is going to further complicate things_
+      - _So in the end I decided to remove Redux all together_
+  - _Github Actions was deployed successfully using nextjs docker-compose Heroku_
+    - _It would be nice to create a second Github Actions for pull request triggers, so that we can test the possible merge commits_
+  - _I did BDD testing because TDD testing was too tricky at this point, perhaps when I get better than I move to TDD_
 
 ---
 
 ## Mission
 
-- Wanted to test out: webpack / react / react-router / redux / sass / redux devtools / webpack image optimization plugins / Netlify form submission (contact form)
+- Wanted to test out:
+
+  - react redux testing with jest & react-testing-library
+  - Github Actions deploying on Heroku when git push master occured
+    - It is nextjs with docker-compose too
+  - sass with bootstrap
+
 - Three route paths:
-  - `/` = counter page with three working redux buttons
-  - `/side` = display compress imaged
-  - `/form` = contact form
+  - `/` = counter page
+  - `/side` = whatever page
   - `/*` = error page
-- working counter with redux
-- use of SASS within my webpack template
-- optimized image (jpeg),
-- deploy on Netlify using their configuration file
 
 ---
 
 ## Main technology / libraries / plugins used
 
-- webpack (my template)
-- javascript
+- nextjs
 - react
-- react-router
-- redux
-  - @redux-devTools/extension
-  - redux-thunk
-- SASS
-- image-minimizer-webpack-plugin / Imagemin / imagemin-mozjpeg
-  - my jpeg file from 232kb to 11kb with 5% quality on production mode
-- `netlify.toml` - Netlify configuration file to redirect static routes (react-router) & basic setup
-- Netlify form submission as contact form for live site
+- Jest & React-Testing-Library (rtl)
+- docker-compose
+- Github Actions
+- SASS with Bootstrap
 
   ***
 
-  ## [ikth-counter-v5-webpack-rRouter-redux-sass-2022](https://github.com/RechadSalma/ikth-counter-v5-webpack-rRouter-redux-sass-2022)
+  ## [ikth-count-v8-nextjs-jest-rtl-githubactions-2022](https://github.com/RechadSalma/ikth-count-v8-nextjs-jest-rtl-githubactions-2022)

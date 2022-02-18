@@ -1,8 +1,6 @@
 ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 -version08: nextjs / docker-compose /react / redux / jest & react-testing-library / sass with bootstrap / deploy on Heroku
 ================ LEFT OFF
--README.md file
-	-CR = FIRST DO LIGHTHOUSE TEST & any leftovers you can think off
 
 ================ DONE
 -check for any outdated modules & update if any
@@ -55,13 +53,12 @@ ikth-counter-v8-nextjs-dockerc-jest-rtesting-2022
 
 -check up on snyk recommendations
 
-================ TODO
 -README.md file
 
+================ TODO
 -git commit & see Heroku deploy
 
 ================ COME BACK
--do not forget to ensure those skipped test are switch back on & passing
 
 ================ WRITE IN YOUR NOTE DOC
 -FAILED. Cannot do nextjs react/jest/react-testing-library/redux testing. I tried to create a root provider in all ways but it depends on _app.js pageProps object, & I cannot seem to mock it in test files. You will get error saying they cannot recognise redux & that I should wrap component with <Provider/>. I spend a long time on this trying all sorts of ways. So if I want to do redux testing than I should use my webpack template because redux is already complicated to setup with nextjs & cannot be tested
